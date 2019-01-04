@@ -1,24 +1,48 @@
 {
    "info":{
-      "contributor":"Microsoft MSM group",
-      "data_created":"2017-04-15 14:30:20",
-      "version":"2.0",
-      "description":"This is 2.0 version of the 2017 MSR-VTT dataset.",
-      "year":"2017"
+      "contributor":"Yue Ning, Kevin Beckmann",
+      "data_created":"2019-01-1 14:30:20",
+      "version":"1.0",
+      "description":"This is 1.0 version of the AI Views dataset.",
+      "year":"2018"
    },
    "videos":[
       {
          "category":9,
          "url":"https://www.youtube.com/watch?v=9lZi22qLlEo",
-         "video_id":"video0",
-         "start time":137.72,
-         "end time":149.44,
+         "video_id":"video20",
+         "start_time":0,
+         "end_time":14, 
          "split":"test",
          "id":0
       },
       {
-
-      }
+         "category":9,
+         "url":"https://www.youtube.com/watch?v=9lZi22qLlEo",
+         "video_id":"video24",
+         "start_time":0,
+         "end_time":11,
+         "split":"test",
+         "id":1
+      },
+      {
+         "category":9,
+         "url":"https://www.youtube.com/watch?v=9lZi22qLlEo",
+         "video_id":"video64",
+         "start_time":0,
+         "end_time":10,
+         "split":"test",
+         "id":2
+      },
+      {
+         "category":9,
+         "url":"https://www.youtube.com/watch?v=9lZi22qLlEo",
+         "video_id":"video65",
+         "start_time":0,
+         "end_time":14,
+         "split":"test",
+         "id":3
+      }     
    ],
    "sentences":[
       {

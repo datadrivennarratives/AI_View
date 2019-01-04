@@ -1,0 +1,30 @@
+{
+   "info":{
+      "contributor":"Microsoft MSM group",
+      "data_created":"2017-04-15 14:30:20",
+      "version":"2.0",
+      "description":"This is 2.0 version of the 2017 MSR-VTT dataset.",
+      "year":"2017"
+   },
+   "videos":[
+      {
+         "category":9,
+         "url":"https://www.youtube.com/watch?v=9lZi22qLlEo",
+         "video_id":"video0",
+         "start time":137.72,
+         "end time":149.44,
+         "split":"test",
+         "id":0
+      },
+      {
+
+      }
+   ],
+   "sentences":[
+      {
+         "caption":"a cartoon animals runs through an ice cave in a video game",
+         "video_id":"video2960",
+         "sen_id":0
+      }
+   ]
+}

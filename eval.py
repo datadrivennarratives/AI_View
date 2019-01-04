@@ -68,6 +68,34 @@ def test(model, crit, dataset, vocab, opt):
         json.dump({"predictions": samples, "scores": valid_score},
                   prediction_results)
 
+def get_caption(model, crit, dataset, vocab, opt):
+    model.eval()
+    loader = DataLoader(dataset, batch_size=opt["batch_size"], shuffle=True)
+    samples = {}
+    for data in loader:
+        # forward the model to get loss
+        fc_feats = Variable(data['fc_feats'], volatile=True).cuda()
+        video_ids = data['video_ids']
+      
+        # forward the model to also get generated samples for each image
+        seq_probs, seq_preds = model(
+            fc_feats, mode='inference', opt=opt)
+        print(seq_preds)
+
+        sents = utils.decode_sequence(vocab, seq_preds)
+
+        for k, sent in enumerate(sents):
+            video_id = video_ids[k]
+            samples[video_id] = [{'image_id': video_id, 'caption': sent}]
+
+    if not os.path.exists(opt["results_path"]):
+        os.makedirs(opt["results_path"])
+
+    with open(os.path.join(opt["results_path"],
+                           opt["model"].split("/")[-1].split('.')[0] + ".json"), 'w') as prediction_results:
+        json.dump({"predictions": samples},
+                  prediction_results)
+
 
 def main(opt):
     dataset = VideoDataset(opt, "test")
@@ -88,7 +116,7 @@ def main(opt):
     model.load_state_dict(torch.load(opt["saved_model"]))
     crit = utils.LanguageModelCriterion()
 
-    test(model, crit, dataset, dataset.get_vocab(), opt)
+    get_caption(model, crit, dataset, dataset.get_vocab(), opt)
 
 
 if __name__ == '__main__':
@@ -112,7 +140,6 @@ if __name__ == '__main__':
     parser.add_argument('--temperature', type=float, default=1.0)
     parser.add_argument('--beam_size', type=int, default=1,
                         help='used when sample_max = 1. Usually 2 or 3 works well.')
-
     args = parser.parse_args()
     args = vars((args))
     opt = json.load(open(args["recover_opt"]))

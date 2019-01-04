@@ -123,7 +123,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--recover_opt', type=str, required=True,
                         help='recover train opts from saved opt_json')
-    parser.add_argument('--saved_model', type=str, default='',
+    parser.add_argument('--saved_model', type=str, default='data/save/model_800.pth',
                         help='path to saved model to evaluate')
 
     parser.add_argument('--dump_json', type=int, default=1,

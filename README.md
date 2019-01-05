@@ -25,8 +25,8 @@ user select genre, theme, plot of videos and system generate the short personal 
 In this Branch need to realize the human maschine interaction, use the django framework and voice control(annyang javescript)
 
 1. interface design [@YueNing](https://github.com/YueNing/AI_View/tree/Spracherkennung/mk/frontend/templates/frontend) [@kevin](https://github.com/datadrivennarratives/AI_View/blob/master/html.zip)
-2. backend data management and data structur design [@kevin](https://github.com/datadrivennarratives/AI_View/blob/master/mk/backend/models.py) [@]() **Not yet implemented**
-3. voice control [@]() **Not yet implemented**
+2. backend data management and data structur design [@kevin](https://github.com/datadrivennarratives/AI_View/blob/master/mk/backend/models.py) [@brankyy](https://github.com/brankyy) **Not yet implemented**
+3. voice control [@brankyy](https://github.com/brankyy) [@YueNing](https://github.com/yuening) **Not yet implemented**
 
 ##### video_caption
 
@@ -34,7 +34,7 @@ In this Branch need to realize the video process code,
 
 1. video caption(Video-based semantic content) [@YueNing](https://github.com/YueNing/AI_View/tree/video_caption)
 2. video classification(Human behavior recognition) [@YueNing](https://github.com/YueNing/AI_View/tree/video_caption/video-classification-3d-cnn-pytorch)
-3. Multi-label universal video classification(Video-based semantic content) [@YueNing]() [@]() **Not yet implemented**
+3. Multi-label universal video classification(Video-based semantic content) [@YueNing](https://github.com/yuening) [@brankyy](https://github.com/brankyy) **Not yet implemented**
 
 ##### master
 

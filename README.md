@@ -41,10 +41,8 @@ In this Branch need to realize the video process code,
 In this Branch merge all project code to here to get the final project code
  
 #### About Links
-- [Source video]()
-- [Caption_model]()
-- [Classification_Human_behavior_model]()
-- [Multi-label_classification_model]()
+- [Source video](https://drive.google.com/open?id=1f0A1u-ZpN7s1yFLTOn5KY38Bt8bnA1dY)
+- [model](https://drive.google.com/open?id=1FnGXdHplAPNQldmDXp2p33qEQF_tCDHK)
 - [Annyang voice contorl](https://github.com/TalAter/annyang)
 - [Theoretical introduction Chinese](https://zhuanlan.zhihu.com/p/28179049)
-- [Theoretical introduction paper]()
+- [Theoretical introduction paper](https://arxiv.org/pdf/1609.06782.pdf)
